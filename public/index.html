@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script>
+    function georgeIsTheBest() {
+      document.getElementById('question').style.display = 'none';
+      document.getElementById('answer').style.display = 'block';
+    }
+  </script>
+
+  <style>
+  h1, button, marquee {
+    font-size: 100px;
+  }
+  body {
+    margin: auto 0;
+    text-align: center;
+    margin-top: 36px;
+  }
+  </style>
+</head>
+<body>
+<div id="question">
+  <h1>IS GEORGE THE BEST?</h1>
+  <button onclick="georgeIsTheBest()">YES</button>
+</div>
+<div id="answer" style="display:none">
+  <h1>
+  <marquee behavior=scroll direction="left" scrollamount="15">GEORGE BASHILOV IS THE BEST!!!!</marquee>
+  </h1>
+</div>
+</body>
+</html>
+
