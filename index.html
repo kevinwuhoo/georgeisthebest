@@ -33,13 +33,23 @@
 </head>
 <body>
   <div class="container">
-    <div>
-      elasticsearch can do it.
-    </div>
+    <div id="geroge-says"></div>
     <div class="geroge">
-      -<div class="fourth-em"></div>geroge
+      -<div class="fourth-em"></div><span id="who-is-dis"></span>
     </div>
   </div>
+
+  <script>
+    var randItem = function(a) { return a[Math.floor(Math.random() * a.length)] }
+
+    var whoIsDis = ['George', 'Geroge']
+    var heSays = [
+        'Elasticsearch can do it.'
+    ]
+
+    document.getElementById('who-is-dis').innerHTML = randItem(whoIsDis)
+    document.getElementById('geroge-says').innerHTML = randItem(heSays)
+  </script>
 </body>
 </html>
 
